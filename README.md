@@ -24,8 +24,8 @@ Camera calibration is a C++/Python library for opencv that facilitates camera ca
     cal = Calibrate(path, width, height)
     
     while(True):#main loop
-	#your code
-	fixed = cal.fix(original_image)
+		#your code
+		fixed = cal.fix(original_image)
 
 **C++:**
 
