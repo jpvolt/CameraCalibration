@@ -1,1 +1,1 @@
-name = "CameraCalibration"
+from .camcalib import Calibrate

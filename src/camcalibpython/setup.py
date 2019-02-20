@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="CamCalib-jpvolt",
-    version="0.0.6",
+    version="0.1.0",
     author="João Pedro VOLTani",
     author_email="jpvoltdeveloper@gmail.com",
     description="Opencv based camera calibration lib for stereo vision",
