@@ -1,7 +1,7 @@
-from camcalib import CamCalib
+from camcalib import *
 import cv2
 
-calib = CamCalib("config.json", 480, 640)
+calib = Calibrate("config.json", 480, 640)
 
 cap = cv2.VideoCapture(0)
 
