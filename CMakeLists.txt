@@ -15,7 +15,7 @@ PUBLIC_HEADER include/camcalib.hpp)
 
 configure_file(src/camcalib.pc.in camcalib.pc @ONLY)
 
-include_directories(CamCalib /include)
+include_directories(include)
 
 install(TARGETS CamCalib
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
