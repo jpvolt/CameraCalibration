@@ -11,6 +11,7 @@ Camera calibration is a C++/Python library for opencv that facilitates camera ca
 **C++:** See *How to build* section.
 
 ## **Usage:**
+**Generate config.json file with the [GUI util](https://github.com/jpvolt/CameraCalibrationGUI);**
 
 **Python:**	  
 
