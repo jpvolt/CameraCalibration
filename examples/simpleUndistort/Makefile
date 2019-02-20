@@ -1,6 +1,6 @@
 CC = g++
 CFLAGS = 
-SRCS = main.cpp
+SRCS = SimpleUndistort.cpp
 PROG = SimpleUndistort
 
 PKGCONF = `pkg-config opencv camcalib --cflags --libs`
