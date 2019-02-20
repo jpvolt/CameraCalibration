@@ -1,16 +1,25 @@
 cmake_minimum_required(VERSION 3.0)
 
-project(mylib VERSION 1.0.1 DESCRIPTION "CamCalibration is a opencv based calibratrion library for stereo vision")
+project(CamCalib VERSION 1.0.0)
+
 include(GNUInstallDirs)
-add_library(mylib SHARED src/main.cpp)
-set_target_properties(mylib PROPERTIES
-    VERSION ${PROJECT_VERSION}
-    SOVERSION 1
-    PUBLIC_HEADER api/mylib.h)
-configure_file(mylib.pc.in mylib.pc @ONLY)
-target_include_directories(mylib PRIVATE .)
-install(TARGETS mylib
+
+
+
+add_library(CamCalib SHARED src/main.cpp)
+
+set_target_properties(CamCalib PROPERTIES
+VERSION ${PROJECT_VERSION}
+SOVERSION 1
+PUBLIC_HEADER include/camcalib.hpp)
+
+configure_file(src/camcalib.pc.in camcalib.pc @ONLY)
+
+include_directories(CamCalib /include)
+
+install(TARGETS CamCalib
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
     PUBLIC_HEADER DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
-install(FILES ${CMAKE_BINARY_DIR}/mylib.pc
+
+install(FILES ${CMAKE_BINARY_DIR}/camcalib.pc
     DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/pkgconfig)
